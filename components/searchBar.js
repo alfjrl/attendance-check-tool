@@ -84,7 +84,7 @@ export default function SearchBar() {
           <div className="dataResult">
             {filteredData.slice(0, 15).map((value, key) => {
               return (
-                <div id={value.name}>
+                <div key={value.name}>
                   <Spacer y={0.5}></Spacer>
                   <Card
                     id={value.name}
